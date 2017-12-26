@@ -38,9 +38,11 @@ func simplePointers(p *int) {
 func main() {
 
 	a := 12
-	p := &a
+	p := &a // points to the address in memory
 
-	simplePointers(p)
+	// '&' address in memory
+	// '*' value in memory
+	simplePointers(p) // passing the address in memory
 
 	basicPointers()
 
