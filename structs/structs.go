@@ -6,8 +6,8 @@ const pi = 3.14159
 
 // showcasing normal structure in GoLang.
 type MyStruct struct {
-	X int
-	Y int
+	a int
+	b int
 }
 
 // showcasing a structure that contains mixed data types.
@@ -23,4 +23,10 @@ func main() {
 	fmt.Println(MyStruct{1, 2})
 
 	fmt.Println(MyMixedStruct{1, "alphabet", true, float32(pi)})
+
+	declaredStruct := MyStruct{32, 42}
+
+	declaredStruct.a = 1
+
+	fmt.Println(declaredStruct.a)
 }
