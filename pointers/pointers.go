@@ -30,7 +30,17 @@ func advancedPointers() {
 	fmt.Printf("d = %v \n", *d)
 }
 
+func simplePointers(p *int) {
+	fmt.Printf("value of the passed pointer is : %v\n", *p)             //leads to the value of type T in memory - for example : 12
+	fmt.Printf("address in memory of the passed pointer is : %v\n", &p) //leads to the address in memory of the passed pointer - for example : 0x1040c130
+}
+
 func main() {
+
+	a := 12
+	p := &a
+
+	simplePointers(p)
 
 	basicPointers()
 
