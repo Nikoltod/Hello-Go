@@ -24,9 +24,12 @@ func main() {
 
 	fmt.Println(MyMixedStruct{1, "alphabet", true, float32(pi)})
 
+	// Declaring new struct of certain type "MyStruct" with given values
 	declaredStruct := MyStruct{32, 42}
 
+	// Assigning new value of the 'a' field in my new structure "declaredStruct" from "MyStruct" type.
 	declaredStruct.a = 1
 
+	// Accessing the 'a' field from 'declaredStruct'
 	fmt.Println(declaredStruct.a)
 }
