@@ -1,15 +1,27 @@
-package main
+package slicing
 
-import "fmt"
+import (
+	"fmt"
 
-func main() {
+	"github.com/Nikoltod/Hello-Go/arrays/slicing/slicingReferences"
+)
+
+func Init() {
+	fmt.Println("\n")
+	fmt.Println("Sliced arrays : \n")
+
 	var arr = [5]int{1, 2, 3, 4, 5}
 
 	// give me a slice of 'arr's values from index 1 through index 3
 	var slicedArr = arr[1:4]
 
 	// output - {2, 3, 4}
-	fmt.Printf("slicedArr = %v", slicedArr)
+	fmt.Printf("slicedArr = %v \n", slicedArr)
+
+	fmt.Println("\n")
+	fmt.Println("Slicing references : \n")
+
+	slicingReferences.Init()
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////

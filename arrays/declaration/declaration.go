@@ -1,4 +1,4 @@
-package main
+package declaration
 
 import "fmt"
 
@@ -26,7 +26,9 @@ func explicitArray() {
 	print(arr)
 }
 
-func main() {
+func Init() {
+	fmt.Println("\n")
+	fmt.Println("Array declaration : \n")
 	//implicit
 	implicitArray()
 
