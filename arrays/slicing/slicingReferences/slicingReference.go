@@ -46,6 +46,32 @@ func brokenSlicedArray(names [4]string) {
 	fmt.Println("///////////////////////////////////////")
 }
 
+func arrayReferences(arr [4]string) {
+	fmt.Println(arr)
+
+	a := arr[0:2]
+	b := arr[1:3]
+
+	fmt.Println(a, b)
+
+	// Assigning new value to index '0' from the incoming array
+	b[0] = "XXX"
+
+	// The values in 'b' have changed
+	fmt.Println(a, b)
+
+	// The value in 'arr' has changed also - slices are like references to arrays
+	fmt.Println(arr)
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// 	A slice does not store any data, it just describes a section of an underlying array.
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Changing the elements of a slice modifies the corresponding elements of its underlying array.
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Other slices that share the same underlying array will see those changes.
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+}
+
 func main() {
 
 	var names = [4]string{
@@ -55,9 +81,14 @@ func main() {
 		"William",
 	}
 
-	// both examples will work - but if you remove the assignment of the array on line #41 outside the 'if' statement with 'recover' the program will begin to 'panic' and you will get a 'Index out of range exception'
-	brokenSlicedArray(names)
+	//The following two functions 'brokenSlicedArray' and 'workingSlicedArray' are just for fun when we're trying to access Index out of range in a array - that's handled with 'recover' statement
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//// both examples will work - but if you remove the assignment of the array on line #41 outside the 'if' statement with 'recover' the program will begin to 'panic' and you will get a 'Index out of range exception'
+	//brokenSlicedArray(names)
 
-	workingSlicedArray(names)
+	//workingSlicedArray(names)
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	arrayReferences(names)
 
 }
