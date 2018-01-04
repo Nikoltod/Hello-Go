@@ -20,10 +20,22 @@ func Init() {
 	s = s[2:]
 	printSlice(s)
 
+	//When Slices have a value of 'nil' they have no 'length' and no 'capacity'
+	fmt.Print("\n when Slice has a value of 'nil'")
+	nilCapacity()
 }
 
 func printSlice(s []int) {
 	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+}
+
+func nilCapacity() {
+	var s []int
+	fmt.Println(s, len(s), cap(s))
+
+	if s == nil {
+		fmt.Println("~'Arrays' is nil! and so is it's capacity")
+	}
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
