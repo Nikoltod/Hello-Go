@@ -21,7 +21,7 @@ func Init() {
 	printSlice(s)
 
 	//When Slices have a value of 'nil' they have no 'length' and no 'capacity'
-	fmt.Print("\n when Slice has a value of 'nil'")
+	fmt.Print("\n  when Slice has a value of 'nil'")
 	nilCapacity()
 }
 
