@@ -3,6 +3,7 @@ package slicing
 import (
 	"fmt"
 
+	"github.com/Nikoltod/Hello-Go/arrays/slicing/capacity"
 	"github.com/Nikoltod/Hello-Go/arrays/slicing/sliceLiterals"
 	"github.com/Nikoltod/Hello-Go/arrays/slicing/slicingReferences"
 )
@@ -26,6 +27,11 @@ func Init() {
 	fmt.Println("\n Slicing literals : \n")
 
 	sliceLiterals.Init()
+
+	fmt.Println("\n Arrays slice and capacity \n")
+
+	capacity.Init()
+
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
