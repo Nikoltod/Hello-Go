@@ -3,6 +3,7 @@ package slicing
 import (
 	"fmt"
 
+	"github.com/Nikoltod/Hello-Go/arrays/slicing/sliceLiterals"
 	"github.com/Nikoltod/Hello-Go/arrays/slicing/slicingReferences"
 )
 
@@ -18,10 +19,13 @@ func Init() {
 	// output - {2, 3, 4}
 	fmt.Printf("slicedArr = %v \n", slicedArr)
 
-	fmt.Println("\n")
-	fmt.Println("Slicing references : \n")
+	fmt.Println("\n Slicing references : \n")
 
 	slicingReferences.Init()
+
+	fmt.Println("\n Slicing literals : \n")
+
+	sliceLiterals.Init()
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
