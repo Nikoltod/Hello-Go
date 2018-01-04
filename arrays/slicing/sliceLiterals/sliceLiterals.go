@@ -3,6 +3,9 @@ package sliceLiterals
 import "fmt"
 
 func Init() {
+
+	// This example uses the Slicing defaults with Slice literals and normal arrays - you can basically skip the high or low bound of a slicing array.
+
 	//slice literal
 	fmt.Println("\n Slicing with Slice literals \n")
 	arrS := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
