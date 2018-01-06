@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/Nikoltod/Hello-Go/arrays/declaration"
+	"github.com/Nikoltod/Hello-Go/arrays/range"
 	"github.com/Nikoltod/Hello-Go/arrays/slicing"
 )
 
@@ -11,6 +12,8 @@ func main() {
 	declaration.Init()
 
 	slicing.Init()
+
+	arrRange.Init()
 }
 
 // Output :
