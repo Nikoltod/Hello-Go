@@ -37,6 +37,8 @@ func simplePointers(p *int) {
 
 func main() {
 
+	// The & operator generates a pointer to its operand.
+	// The * operator denotes the pointer's underlying value.
 	a := 12
 	p := &a // points to the address in memory
 
