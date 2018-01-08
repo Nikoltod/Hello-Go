@@ -2,14 +2,14 @@ package maps
 
 import "fmt"
 
-type Square struct {
+type Coords struct {
 	x, y float64
 }
 
 func mapSample() {
-	var a = make(map[string]Square)
+	var a = make(map[string]Coords)
 
-	a["Alpha"] = Square{
+	a["Alpha"] = Coords{
 		50.5162, 23.5561,
 	}
 
@@ -23,18 +23,28 @@ func mapSample() {
 }
 
 func mapLiterals() {
-	var m = map[string]Square{
-		"Alpha": Square{
+	var m = map[string]Coords{
+		"Alpha": Coords{
 			50.5162,
 			23.5561,
 		},
-		"Beta": Square{
+		"Beta": Coords{
 			52.5127,
 			23.5561,
 		},
 	}
 
 	fmt.Println(m)
+
+	fmt.Println("\n We can also declare it with a shorter syntax \n")
+
+	//If the top-level type is just a type name, you can omit it from the elements of the literal.
+	var n = map[string]Coords{
+		"SAP":    {40.68433, -74.39967},
+		"Google": {37.42202, -122.08408},
+	}
+
+	fmt.Println(n)
 
 	//Map literals are like struct literals, but the keys are required.
 }
