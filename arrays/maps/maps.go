@@ -1,6 +1,10 @@
 package maps
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/Nikoltod/Hello-Go/arrays/maps/mutating-maps"
+)
 
 type Coords struct {
 	x, y float64
@@ -58,5 +62,8 @@ func Init() {
 
 	fmt.Printf("\n Map literal declaration \n")
 	mapLiterals()
+
+	fmt.Printf("\n Mutating maps showcase \n")
+	mutatingMaps.Init()
 
 }
