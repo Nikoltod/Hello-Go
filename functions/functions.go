@@ -4,6 +4,8 @@ import (
 	"fmt"
 
 	"github.com/Nikoltod/Hello-Go/functions/closures"
+	"github.com/Nikoltod/Hello-Go/functions/factorial"
+	"github.com/Nikoltod/Hello-Go/functions/fibonacci"
 )
 
 func returnFunc() func() string {
@@ -30,6 +32,18 @@ func main() {
 	fmt.Println("Functions which accept other functions as arguments :")
 
 	birdCall(returnFunc())
+
+	fmt.Println()
+
+	fmt.Println("Fibonacci sequence with functions :")
+
+	fibonacci.Init()
+
+	fmt.Println()
+
+	fmt.Println("Factorial calculation with functions :")
+
+	factorial.Init(5)
 
 	fmt.Println()
 }
