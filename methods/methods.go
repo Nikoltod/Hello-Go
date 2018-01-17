@@ -35,3 +35,9 @@ func main() {
 
 
 //methods are just functions with a reciever argument.
+
+//There are several reasons to choose pointer recievers over value recievers
+//You can modify the value that its reciever points to.
+//You can avoid copying the value on each method call. This can be more efficient if the reciever is a large struct.
+
+
