@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"math"
+
+	"github.com/Nikoltod/Hello-Go/interfaces/implicit-interfaces"
 )
 
 type Abser interface {
@@ -38,6 +40,13 @@ func main() {
 
 	a = &v // a *Vertex implements Abser
 	fmt.Printf("Method 2 with pointer reciever : %v", a.Abs())
+
+	fmt.Println()
+	fmt.Println()
+
+	fmt.Println("Declaring implicit interfaces")
+
+	implicitInterfaces.Init()
 
 }
 
