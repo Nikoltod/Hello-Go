@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"math"
 
+	"github.com/Nikoltod/Hello-Go/interfaces/interface-values"
+
 	"github.com/Nikoltod/Hello-Go/interfaces/implicit-interfaces"
 )
 
@@ -47,6 +49,16 @@ func main() {
 	fmt.Println("Declaring implicit interfaces")
 
 	implicitInterfaces.Init()
+
+	fmt.Println()
+	fmt.Println()
+
+	fmt.Println("Interface values")
+
+	interfaceValues.Init()
+
+	fmt.Println()
+	fmt.Println()
 
 }
 
